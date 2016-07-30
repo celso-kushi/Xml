@@ -3,7 +3,7 @@
  */
 class WriteGpsData {
     def static void main (String[] args) {
-        def file = new File('PluralSight/data/fells_loop.gpx')
+        def file = new File('data/fells_loop.gpx')
         def slurper = new XmlSlurper()
         def gpx = slurper.parse(file)
 
@@ -21,7 +21,7 @@ class WriteGpsData {
             }
         }
 
-        def outfile = new File('PluralSight/data/arquivo.xml')
+        def outfile = new File('data/arquivo.xml')
         outfile.write(xml.toString())
     }
 }
