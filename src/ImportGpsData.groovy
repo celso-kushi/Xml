@@ -13,7 +13,7 @@ class ImportGpsData {
         String currentDir = new File(".").getAbsolutePath()
         println(currentDir)  //D:\Grails\Groovy\.
         //Obtendo o arquivo
-        def file = new File('PluralSight/data/fells_loop.gpx')
+        def file = new File('data/fells_loop.gpx')
         //Verificando se o arquivo está acessível
         println file.exists()
 
